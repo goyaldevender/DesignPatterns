@@ -20,7 +20,7 @@ public class DeliveryNetworkFactory {
 		else if(type.equalsIgnoreCase("Non-Battery")){
 			return new NonBattery();
 		}
-		else if(type.equalsIgnoreCase("Gas Plant")){
+		else if(type.equalsIgnoreCase("GasPlant")){
 			return new GasPlant();
 		}
 		else{
