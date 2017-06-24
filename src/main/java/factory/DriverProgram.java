@@ -2,6 +2,7 @@ package factory;
 
 /*
  * @patterType 	: Creation
+ * 
  * @usage      	: High 
  * 
  * @description : The design pattern involves an interface(DeliveryNetwork) and its implementations.
@@ -12,7 +13,11 @@ package factory;
  *                simply uses the factory to get various objects by using getDeliveryNetwork("type") method 
  *                for example: getDeliveryNetwork("Well");
  *                
- *@difficulty 	: Low
+ * @difficulty 	: Low
+ */
+
+/**
+ *  Description: Driver Program to test the functionality
  */
 
 public class DriverProgram {

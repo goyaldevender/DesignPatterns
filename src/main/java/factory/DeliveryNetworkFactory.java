@@ -1,12 +1,9 @@
-/**
- * 
- */
 package factory;
 
 /**
- * @author Devender Goyal
- * @date   24 June 2017
+ * @Description :  The Factory class containing the getInstance() method
  */
+
 public class DeliveryNetworkFactory {
 	
 	

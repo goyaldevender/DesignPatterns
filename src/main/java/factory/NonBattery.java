@@ -1,5 +1,9 @@
 package factory;
 
+/**
+ *  Description: Non-battery subclass implementing DN
+ */
+
 public class NonBattery implements DeliveryNetwork {
 
 	public NonBattery() {
