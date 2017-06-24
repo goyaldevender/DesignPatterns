@@ -18,8 +18,13 @@ package factory;
 public class DriverProgram {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		// Creating the object of the factory class
+		DeliveryNetworkFactory dnFactory = new DeliveryNetworkFactory();
+		
+		dnFactory.getDeliveryNetwork("battery");
+		dnFactory.getDeliveryNetwork("non-battery");
+		dnFactory.getDeliveryNetwork("gasplant");
+		
 	}
-
 }

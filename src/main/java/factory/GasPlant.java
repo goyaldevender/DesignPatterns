@@ -9,4 +9,8 @@ package factory;
  */
 public class GasPlant implements DeliveryNetwork {
 
+	public GasPlant() {
+		System.out.println("Gas Plant object created successfully");
+	}
+
 }
