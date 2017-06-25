@@ -5,7 +5,9 @@ package creational.singleton.eager;
 
 /**
  * @author       : Devender Goyal
- * @description  : This refers to the eager instantiation of the Singleton Pattern
+ * @description  : This refers to the eager instantiation of the Singleton Pattern.
+ * 				   In the singleton pattern, the constructor is always private and
+ * 				   we use the getInstance() method to get the object.
  */
 public class OilField { 
 

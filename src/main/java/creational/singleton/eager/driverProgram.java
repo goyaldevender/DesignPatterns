@@ -14,8 +14,8 @@ public class driverProgram {
 	 */
 	public static void main(String[] args) {
 
-//      We can use the new keyword because the constructor is private		
-//		OilField of = new OilField();   -> results in error
+//      We can't use the new keyword because the constructor is private		
+//		OilField oField = new OilField();   -> results in error
 
 //		Getting the singleton object
 		OilField oField = OilField.getInstance();
