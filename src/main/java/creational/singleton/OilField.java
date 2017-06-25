@@ -1,7 +1,7 @@
 /**
  * 
  */
-package singleton_dcl;
+package creational.singleton;
 
 /**
  * @author Devender Goyal

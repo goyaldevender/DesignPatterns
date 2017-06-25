@@ -1,4 +1,4 @@
-package factory;
+package creational.factory;
 
 /**
  * @Description :  The Factory class containing the getInstance() method
