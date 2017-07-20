@@ -1,9 +1,7 @@
 /**
  * 
  */
-package solid.interface_segregation.bad;
-
-import javax.print.attribute.standard.PrinterName;
+package solid.interface_segregation.good;
 
 /**
  * @author: 	 Devender Goyal
@@ -11,7 +9,8 @@ import javax.print.attribute.standard.PrinterName;
  * 				 does multiple number of responsibilities then its better to split the 
  * 				 interface. This helps us because now, we don't have to implement empty 
  * 				 methods in the implementation classes.
- * @comments:    Here, we can see that we have the empty methods in the ToyCar and ToyAeroplane
+ * @comments:    Here, we can see that we have segregated the Toy interface into Toy, Flyable,
+ *			     Movable		
  * 
  * @note:        The variables in the interface are by default static and final, hence the 
  * 				 value of the variable is constant and can't be changed.
@@ -22,21 +21,36 @@ interface Toy{
 	String toyName=null;
 	int cost = 0;
 	
-	public void move();
+	public void printName();
+	public void printCost();
+}
+
+interface Flyable{
+	
 	public void fly();
 }
 
-class ToyCar implements Toy{
+interface Movable{
+	public void move();
+}
 
+class ToyCar implements Toy, Movable{
+
+	public void printName(){
+		System.out.println("Name of the toy = " + toyName);
+	}
+
+	public void printCost(){
+		System.out.println("Cost of the toy = " + cost);
+	}
 	
 	public void move() {
 		System.out.println("Move the car by 5 KM");	
 	}
+}
 
-	public void fly() {
-		
-	}
-	
+class ToyAeroplane implements Toy, Flyable {
+
 	public void printName(){
 		System.out.println("Name of the toy = " + toyName);
 	}
@@ -44,25 +58,11 @@ class ToyCar implements Toy{
 	public void printCost(){
 		System.out.println("Cost of the toy = " + cost);
 	}
-}
-
-class ToyAeroplane implements Toy {
-
-	public void move() {
-		
-	}
-
+	
 	public void fly() {
 		System.out.println("Fly the car over the emirates");
 	}
-	
-	public void printName(){
-		System.out.println("Name of the toy = " + toyName);
-	}
 
-	public void printCost(){
-		System.out.println("Cost of the toy = " + cost);
-	}
 }
 
 public class DriverProgram{
